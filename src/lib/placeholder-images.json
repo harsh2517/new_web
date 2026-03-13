@@ -1,0 +1,124 @@
+{
+  "placeholderImages": [
+    {
+      "id": "client-logo-1",
+      "description": "Client logo 1",
+      "imageUrl": "https://picsum.photos/seed/1/100/40",
+      "imageHint": "logo"
+    },
+    {
+      "id": "client-logo-2",
+      "description": "Client logo 2",
+      "imageUrl": "https://picsum.photos/seed/2/100/40",
+      "imageHint": "logo"
+    },
+    {
+      "id": "client-logo-3",
+      "description": "Client logo 3",
+      "imageUrl": "https://picsum.photos/seed/3/100/40",
+      "imageHint": "logo"
+    },
+    {
+      "id": "client-logo-4",
+      "description": "Client logo 4",
+      "imageUrl": "https://picsum.photos/seed/4/100/40",
+      "imageHint": "logo"
+    },
+    {
+      "id": "client-logo-5",
+      "description": "Client logo 5",
+      "imageUrl": "https://picsum.photos/seed/5/100/40",
+      "imageHint": "logo"
+    },
+    {
+      "id": "calculator-image",
+      "description": "Person using a calculator",
+      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageHint": "calculator finance"
+    },
+    {
+      "id": "startup-funding-story",
+      "description": "Startup funding success story",
+      "imageUrl": "https://picsum.photos/seed/7/600/400",
+      "imageHint": "startup business"
+    },
+    {
+      "id": "saas-story-handshake",
+      "description": "Business handshake over a city map with data points",
+      "imageUrl": "https://picsum.photos/seed/8/600/400",
+      "imageHint": "handshake deal"
+    },
+    {
+      "id": "it-agency-story",
+      "description": "IT Agency office working",
+      "imageUrl": "https://picsum.photos/seed/9/600/400",
+      "imageHint": "office work"
+    },
+    {
+      "id": "startup-founder-story",
+      "description": "Startup founder presenting to team",
+      "imageUrl": "https://picsum.photos/seed/10/600/400",
+      "imageHint": "startup presentation"
+    },
+    {
+      "id": "cafe-story",
+      "description": "Interior of a modern cafe or restaurant",
+      "imageUrl": "https://picsum.photos/seed/11/600/400",
+      "imageHint": "restaurant interior"
+    },
+    {
+      "id": "d2c-brand-story",
+      "description": "A trendy fashion D2C brand product display",
+      "imageUrl": "https://picsum.photos/seed/12/600/400",
+      "imageHint": "fashion brand"
+    },
+    {
+      "id": "wellness-brand-story",
+      "description": "Wellness brand products like pills and herbs",
+      "imageUrl": "https://picsum.photos/seed/13/600/400",
+      "imageHint": "wellness supplements"
+    },
+    {
+      "id": "home-decor-story",
+      "description": "Home decor store interior",
+      "imageUrl": "https://picsum.photos/seed/14/600/400",
+      "imageHint": "home decor"
+    },
+    {
+      "id": "organic-brand-story",
+      "description": "Assortment of organic food products",
+      "imageUrl": "https://picsum.photos/seed/15/600/400",
+      "imageHint": "organic food"
+    },
+    {
+      "id": "ecommerce-aggregator-story",
+      "description": "E-commerce laptop with shopping cart icon",
+      "imageUrl": "https://picsum.photos/seed/16/600/400",
+      "imageHint": "ecommerce laptop"
+    },
+    {
+      "id": "founder-chat-1",
+      "description": "Chat about clean books",
+      "imageUrl": "https://picsum.photos/seed/17/350/550",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "founder-chat-2",
+      "description": "Chat about GST filing",
+      "imageUrl": "https://picsum.photos/seed/18/350/550",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "founder-chat-3",
+      "description": "Chat about professional team",
+      "imageUrl": "https://picsum.photos/seed/19/350/550",
+      "imageHint": "chat message"
+    },
+    {
+      "id": "founder-chat-4",
+      "description": "Chat about backlog cleanup",
+      "imageUrl": "https://picsum.photos/seed/20/350/550",
+      "imageHint": "chat message"
+    }
+  ]
+}
