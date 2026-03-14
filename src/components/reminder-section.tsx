@@ -1,34 +1,37 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { buttonVariants } from '@/components/ui/button';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { EcommerceAggregatorStorySection } from './ecommerce-aggregator-story-section';
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { EcommerceAggregatorStorySection } from "./ecommerce-aggregator-story-section";
 
 const slides = [
   {
     id: 1,
     title1: "Bookkeeping Service",
     title2: "For Real Estate Business",
-    description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-    image: "/images/bro.avif", // તમારા પ્રોજેક્ટ મુજબ પાથ બદલજો
+    description:
+      "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
+    image: "/Images/bro.avif", // તમારા પ્રોજેક્ટ મુજબ પાથ બદલજો
   },
   {
     id: 2,
     title1: "Commission & Rental Tracking",
     title2: "That Works as Hard as You Do",
-    description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
-    image: "/images/grow.avif",
+    description:
+      "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
+    image: "/Images/grow.avif",
   },
   {
     id: 3,
     title1: "Stay on Top of Every",
     title2: "Property's Profitability",
-    description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
-    image: "/images/Realestate.avif",
-  }
+    description:
+      "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
+    image: "/Images/Realestate.avif",
+  },
 ];
 
 export function ReminderSection() {
@@ -47,7 +50,6 @@ export function ReminderSection() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            
             {/* Left Side: Animated Content */}
             <div className="space-y-6 text-left transition-all duration-700 ease-in-out">
               <div className="space-y-2">
@@ -68,18 +70,18 @@ export function ReminderSection() {
                 <Link
                   href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
                   className={cn(
-                    buttonVariants({ size: 'lg' }),
-                    'bg-[#FF4500] hover:bg-[#E63E00] text-white px-8 py-7 text-lg font-semibold rounded-full shadow-lg transition-all hover:scale-105 active:scale-95'
+                    buttonVariants({ size: "lg" }),
+                    "bg-[#FF4500] hover:bg-[#E63E00] text-white px-8 py-7 text-lg font-semibold rounded-full shadow-lg transition-all hover:scale-105 active:scale-95",
                   )}
                 >
                   Book a Free Consultation
                 </Link>
-                
+
                 <Link
-                  href= "#"
+                  href="#"
                   className={cn(
-                    buttonVariants({ variant: 'outline', size: 'lg' }),
-                    'border-[#4A5568] text-[#4A5568] hover:bg-gray-100 px-10 py-7 text-lg font-semibold rounded-full border-2 transition-all'
+                    buttonVariants({ variant: "outline", size: "lg" }),
+                    "border-[#4A5568] text-[#4A5568] hover:bg-gray-100 px-10 py-7 text-lg font-semibold rounded-full border-2 transition-all",
                   )}
                 >
                   Explore Plans
@@ -94,7 +96,9 @@ export function ReminderSection() {
                     onClick={() => setCurrentSlide(index)}
                     className={cn(
                       "h-2 transition-all duration-300 rounded-full",
-                      currentSlide === index ? "w-8 bg-[#FF4500]" : "w-2 bg-gray-300"
+                      currentSlide === index
+                        ? "w-8 bg-[#FF4500]"
+                        : "w-2 bg-gray-300",
                     )}
                   />
                 ))}
@@ -103,7 +107,10 @@ export function ReminderSection() {
 
             {/* Right Side: Animated Image */}
             <div className="relative flex justify-center items-center h-[400px] md:h-[500px]">
-              <div key={currentSlide} className="relative w-full h-full animate-in fade-in zoom-in duration-1000">
+              <div
+                key={currentSlide}
+                className="relative w-full h-full animate-in fade-in zoom-in duration-1000"
+              >
                 <Image
                   src={slides[currentSlide].image}
                   alt="Hero Illustration"
@@ -113,7 +120,6 @@ export function ReminderSection() {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </div>
