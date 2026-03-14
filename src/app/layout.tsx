@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Accountooze.ai",
+  title: "Accountooze",
   description: "Personalized user experiences by Accountooze.ai",
 
   icons: {
