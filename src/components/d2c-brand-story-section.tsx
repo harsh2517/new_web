@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Check, ShoppingBag, AlertCircle, Zap, ArrowRight, BarChart3 } from 'lucide-react';
+import { Check, ShoppingBag, AlertCircle, Zap, ArrowRight, BarChart3, Target, Rocket } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function D2cBrandStorySection() {
@@ -18,10 +18,10 @@ export function D2cBrandStorySection() {
   ];
 
   const solutionPoints = [
-    'Week 1: Integrated all sales channels with the accounting platform.',
-    'Week 2: Reconciled 3,847 transactions across payment gateways, marketplaces, COD and bank accounts',
-    'Week 3: Built SKU-level profitability tracker with real-time margins',
-    'Week 4: Automated GST & Tax compliance and expense categorization',
+    { title: 'Week 1', text: 'Integrated all sales channels with the accounting platform.', icon: <Target className="w-4 h-4" /> },
+    { title: 'Week 2', text: 'Reconciled 3,847 transactions across payment gateways, marketplaces, COD and bank accounts', icon: <Zap className="w-4 h-4" /> },
+    { title: 'Week 3', text: 'Built SKU-level profitability tracker with real-time margins', icon: <BarChart3 className="w-4 h-4" /> },
+    { title: 'Week 4', text: 'Automated GST & Tax compliance and expense categorization', icon: <Rocket className="w-4 h-4" /> },
   ];
 
   const resultsPoints = [
@@ -33,118 +33,129 @@ export function D2cBrandStorySection() {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl rounded-[2.5rem] bg-card p-4 sm:p-8 md:p-14 shadow-2xl border relative overflow-hidden">
-      {/* Decorative Gradient Background */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 h-80 w-80 rounded-full bg-primary/5 blur-[100px]" />
-      
-      {/* Section Header */}
-      <div className="mb-16 text-center relative z-10">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary shadow-inner border border-primary/20">
-          <ShoppingBag className="h-6 w-6" />
-        </div>
-        <h3 className="text-3xl md:text-5xl font-black tracking-tight text-foreground leading-[1.1] max-w-4xl mx-auto">
-          From Spreadsheets to <span className="text-primary italic">Real-Time Profitability</span>
-        </h3>
-        <p className="mt-4 text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">A D2C Brand's Finance Transformation</p>
-      </div>
-
-      <div className="grid gap-16 lg:grid-cols-12 lg:items-start relative z-10">
-        
-        {/* Left Side: Image & Crisis (Col-5) */}
-        <div className="lg:col-span-5 space-y-10">
-          <div className="relative group">
-            {storyImage && (
-              <Image
-                src={storyImage.imageUrl}
-                alt={storyImage.description}
-                width={600}
-                height={400}
-                className="rounded-[2rem] shadow-2xl border-2 transition-transform duration-500 group-hover:scale-[1.01]"
-                data-ai-hint={storyImage.imageHint}
-              />
-            )}
-            <div className="absolute -bottom-6 -left-6 hidden md:flex items-center gap-3 bg-background p-4 rounded-2xl shadow-xl border">
-              <div className="bg-primary/10 p-2 rounded-lg">
-                <BarChart3 className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase text-muted-foreground">Margins Boosted</p>
-                <p className="text-xl font-black text-foreground">18% UP</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-destructive/5 rounded-3xl p-8 border border-destructive/10">
-            <h4 className="flex items-center gap-2 font-bold text-lg text-destructive uppercase tracking-widest mb-6">
-              <AlertCircle className="h-5 w-5" /> The Crisis
-            </h4>
-            <ul className="space-y-4">
-              {crisisPoints.map((point, index) => (
-                <li key={index} className="flex items-start gap-3 text-sm font-medium text-muted-foreground leading-relaxed">
-                  <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-destructive/50" />
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Right Side: Problem, Solution & Results (Col-7) */}
-        <div className="lg:col-span-7 space-y-12">
+    <section className="py-20 bg-white">
+      <div className="container mx-auto max-w-6xl px-4">
+        {/* Main Card Container with your requested Border & Shadow Style */}
+        <div className="rounded-[2.5rem] bg-[#F8F9FA] p-6 sm:p-10 md:p-14 border border-transparent hover:border-[#FF4500]/20 transition-all duration-300 hover:shadow-2xl relative overflow-hidden group/main">
           
-          {/* Problem Block */}
-          <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-1.5 before:bg-primary before:rounded-full">
-            <h4 className="text-sm font-black uppercase tracking-widest text-primary mb-2">The Problem</h4>
-            <p className="text-xl font-semibold leading-relaxed text-foreground/90">
-              A trendy fashion D2C brand was scaling fast across Instagram and their website but their accounting was stuck in spreadsheets. <span className="text-muted-foreground italic">They had no idea if they were profitable.</span>
-            </p>
+          {/* Header Section */}
+          <div className="mb-16 text-center relative z-10">
+            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-sm border border-gray-100 text-[#FF4500]">
+              <ShoppingBag className="h-7 w-7" />
+            </div>
+            <h3 className="text-3xl md:text-5xl font-black tracking-tight text-[#1a1a1a] leading-tight">
+              From Spreadsheets to <span className="text-[#FF4500]">Real-Time Profitability</span>
+            </h3>
+            <p className="mt-4 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">D2C Transformation Case Study</p>
           </div>
 
-          {/* Solution Timeline */}
-          <div className="space-y-6">
-            <h4 className="text-sm font-black uppercase tracking-widest text-primary flex items-center gap-2">
-              <Zap className="h-4 w-4 fill-primary/20" /> The 4-Week Sprint
-            </h4>
-            <div className="grid gap-3">
-              {solutionPoints.map((point, index) => (
-                <div key={index} className="group flex items-center gap-4 rounded-2xl border bg-muted/20 p-4 transition-all hover:bg-muted/40 hover:border-primary/30">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-background font-black text-primary shadow-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    {index + 1}
+          <div className="grid gap-12 lg:grid-cols-12 relative z-10">
+            
+            {/* Left Column: Visuals & Crisis */}
+            <div className="lg:col-span-5 space-y-10">
+              <div className="relative group/img">
+                {storyImage && (
+                  <div className="overflow-hidden rounded-[2rem] border-4 border-white shadow-xl">
+                    <Image
+                      src={storyImage.imageUrl}
+                      alt={storyImage.description}
+                      width={600}
+                      height={450}
+                      className="object-cover aspect-[4/3] transition-transform duration-500 group-hover/img:scale-105"
+                    />
                   </div>
-                  <p className="text-sm font-bold text-muted-foreground group-hover:text-foreground transition-colors">{point}</p>
+                )}
+                
+                {/* Float Badge */}
+                <div className="absolute -bottom-6 -left-6 flex items-center gap-3 bg-white p-4 rounded-2xl shadow-xl border border-gray-50">
+                  <div className="bg-[#FF4500]/10 p-2 rounded-lg">
+                    <BarChart3 className="h-6 w-6 text-[#FF4500]" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black text-gray-400 uppercase">Margins</p>
+                    <p className="text-xl font-black text-[#1a1a1a]">18% UP</p>
+                  </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Crisis Card with Border Style */}
+              <div className="bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm transition-all hover:border-red-100">
+                <h4 className="flex items-center gap-2 font-black text-sm text-red-500 uppercase tracking-widest mb-6">
+                  <AlertCircle className="h-5 w-5" /> The Crisis
+                </h4>
+                <ul className="space-y-4">
+                  {crisisPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3 text-sm font-semibold text-gray-500 leading-relaxed">
+                      <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-300" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Column: Solution & Results */}
+            <div className="lg:col-span-7 space-y-12">
+              
+              {/* Problem Statement */}
+              <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-1.5 before:bg-[#FF4500] before:rounded-full">
+                <h4 className="text-xs font-black uppercase tracking-widest text-[#FF4500] mb-2">The Problem</h4>
+                <p className="text-xl font-bold leading-relaxed text-[#1a1a1a]">
+                  Scaling fast across Instagram and their website but accounting was stuck in spreadsheets. <span className="text-gray-400 italic font-medium">They had no visibility on actual profit.</span>
+                </p>
+              </div>
+
+              {/* Timeline Sprint with Bordered Cards */}
+              <div className="space-y-6">
+                <h4 className="text-xs font-black uppercase tracking-widest text-[#FF4500] flex items-center gap-2">
+                  <Zap className="h-4 w-4 fill-[#FF4500]" /> The 4-Week Sprint
+                </h4>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {solutionPoints.map((point, index) => (
+                    <div key={index} className="group/item flex flex-col gap-2 rounded-2xl border border-gray-100 bg-white p-5 transition-all hover:border-[#FF4500]/30 hover:shadow-md">
+                      <div className="flex justify-between items-center">
+                        <span className="text-[10px] font-black text-[#FF4500]">{point.title}</span>
+                        <div className="text-gray-300 group-hover/item:text-[#FF4500] transition-colors">{point.icon}</div>
+                      </div>
+                      <p className="text-sm font-bold text-gray-600 leading-snug">{point.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Results Section - Dark Mode style from screenshots */}
+              <div className="rounded-[2.5rem] bg-[#1a1a1a] p-8 md:p-10 text-white shadow-2xl relative overflow-hidden group/res">
+                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover/res:scale-110 transition-transform duration-700">
+                   <Target className="w-24 h-24" />
+                </div>
+                <h4 className="font-black text-2xl mb-8 flex items-center gap-3">
+                  <div className="h-8 w-1 bg-[#FF4500]" />
+                  The Results
+                </h4>
+                <ul className="grid gap-5">
+                  {resultsPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF4500] mt-0.5 shadow-lg shadow-[#FF4500]/20">
+                        <Check className="h-4 w-4 text-white" />
+                      </div>
+                      <span className="text-[15px] font-bold tracking-tight text-gray-200">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
             </div>
           </div>
 
-          {/* High-Impact Results Card */}
-          <div className="rounded-[2.5rem] bg-foreground p-1 shadow-2xl">
-            <div className="bg-foreground rounded-[2.4rem] p-8 md:p-10 text-background">
-              <h4 className="font-black text-2xl mb-8 flex items-center gap-3 underline decoration-primary decoration-4 underline-offset-8">
-                The Results
-              </h4>
-              <ul className="grid gap-5">
-                {resultsPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-4">
-                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary mt-0.5">
-                      <Check className="h-4 w-4 text-primary-foreground" />
-                    </div>
-                    <span className="text-sm md:text-base font-bold tracking-tight leading-snug">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          {/* Footer Link Style */}
+          {/* <div className="mt-16 flex justify-center">
+             <div className="flex items-center gap-2 text-[10px] font-black text-gray-400 uppercase tracking-widest group cursor-default">
+               Building the future of D2C Finance <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform text-[#FF4500]" />
+             </div>
+          </div> */}
 
         </div>
       </div>
-
-      {/* Subtle Link to next step or similar */}
-      <div className="mt-16 flex justify-center">
-         <div className="flex items-center gap-2 text-xs font-bold text-muted-foreground uppercase tracking-widest group cursor-default">
-           Building the future of D2C Finance <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-         </div>
-      </div>
-    </div>
+    </section>
   );
 }

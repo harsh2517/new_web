@@ -26,14 +26,12 @@ export default async function Home() {
   return (
     <>
     <ScrollReveal>
-      <HeroSection />
+      <HeroSection /> 
       </ScrollReveal>
       <ScrollReveal>
         <ReminderSection />
       </ScrollReveal>
-      <ScrollReveal>
-        <BookingPage />
-      </ScrollReveal>
+      
       <ScrollReveal>
         <ServicesSection />
       </ScrollReveal>
@@ -47,29 +45,29 @@ export default async function Home() {
       <ProcessSection />
       </ScrollReveal>
       
-      <div className="bg-secondary py-16 md:py-24">
-        <div className="container">
-          <div className="mb-12 text-center">
+      {/* <div className="bg-secondary py-16 md:py-24">
+        <div className="container"> */}
+          {/* <div className="mb-12 text-center">
             <h2 className="text-4xl font-bold tracking-tight">
               Real Founder Stories
             </h2>
             <p className="mt-2 text-lg text-muted-foreground">
               From chaos to clarity. See how we help businesses like yours.
             </p>
-          </div>
-          <div className="space-y-24">
+          </div> */}
+          {/* <div className="space-y-24"> */}
             <ScrollReveal>
             <RealStoriesSection />
             </ScrollReveal>
             <ScrollReveal>
             <ItAgencyStorySection />
             </ScrollReveal>
-            <ScrollReveal>
-            <StartupFounderStorySection />
-            </ScrollReveal>
-            <ScrollReveal>
+            {/* <ScrollReveal>
+            {/* <StartupFounderStorySection /> */}
+            {/* </ScrollReveal> */}
+            {/* <ScrollReveal>
             <CafeStorySection />
-            </ScrollReveal>
+            </ScrollReveal> */}
             <ScrollReveal>
             <D2cBrandStorySection />
             </ScrollReveal>
@@ -79,15 +77,15 @@ export default async function Home() {
             <ScrollReveal>
             <HomeDecorStorySection />
             </ScrollReveal>
-            <ScrollReveal>
+            {/* <ScrollReveal>
             <OrganicBrandStorySection />
-            </ScrollReveal>
+            </ScrollReveal> */}
             <ScrollReveal>
             <EcommerceAggregatorStorySection />
             </ScrollReveal>
-          </div>
+          {/* </div>
         </div>
-      </div>
+      </div> */}
       {/* <FounderChatsSection /> */}
       <ScrollReveal>
       <StrategyCallSection />
@@ -97,6 +95,9 @@ export default async function Home() {
       </ScrollReveal>
       <ScrollReveal>
       <FaqSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <BookingPage />
       </ScrollReveal>
       <ScrollReveal>
       <FreedomCtaSection />

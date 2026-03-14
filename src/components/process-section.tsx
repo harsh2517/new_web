@@ -8,6 +8,7 @@ import { Button, buttonVariants } from './ui/button';
 import { CheckCircle2, ChevronRight, Settings2, BarChart3, LineChart, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import AttentionButton from './button _animation/page';
 
 const processSteps = [
   {
@@ -139,6 +140,7 @@ export function ProcessSection() {
         </Accordion>
 
         <div className="mt-20 text-center">
+          <AttentionButton>
           <Link
             href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
             target="_blank"
@@ -157,6 +159,7 @@ export function ProcessSection() {
               </div>
             </div>
           </Link>
+          </AttentionButton>
         </div>
       </div>
     </section>

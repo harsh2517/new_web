@@ -2,6 +2,7 @@ import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import AttentionButton from "./button _animation/page";
 
 export function FreedomCtaSection() {
   return (
@@ -30,6 +31,7 @@ export function FreedomCtaSection() {
 
         {/* CTA */}
         <div className="mt-10 flex justify-center">
+          <AttentionButton>
 
           <Link
             href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
@@ -43,6 +45,7 @@ export function FreedomCtaSection() {
             Book Your Free Strategy Call
             <ArrowRight className="h-5 w-5" />
           </Link>
+          </AttentionButton>
 
         </div>
 

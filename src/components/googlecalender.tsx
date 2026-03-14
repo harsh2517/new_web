@@ -1,46 +1,53 @@
 export default function BookingPage() {
   return (
-    <div style={{
-      minHeight: "100vh",
-      width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      backgroundColor: "#f5f5f5"
-    }}>
+    <div
+      style={{
+        minHeight: "100vh",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#f5f5f5"
+      }}
+    >
       
-      {/* Header Section */}
+      {/* Header */}
       <div
         style={{
-          background: "#039BE5",
+          background: "#FF6600",
           color: "white",
-          padding: "clamp(12px, 3vw, 24px)",
-          fontSize: "clamp(18px, 4vw, 28px)",
+          padding: "16px 5%",
+          fontSize: "clamp(18px, 2vw, 24px)",
           fontWeight: "600",
-          textAlign: "center",
           boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
         }}
       >
-        Book an Appointment
+        BOOK INTRO MEETING
       </div>
 
-      {/* Main Content - Centered */}
-      <div style={{
-        flex: 1,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "clamp(10px, 2vw, 20px)"
-      }}>
+      {/* Main Content */}
+      <div
+        style={{
+          flex: 1,
+          width: "100%",
+          padding: "30px 5%",
+          boxSizing: "border-box"
+        }}
+      >
         
-        {/* Iframe Container */}
-        <div style={{
-          width: "min(95%, 1200px)",
-          height: "min(80vh, 800px)",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
-          borderRadius: "8px",
-          overflow: "hidden",
-          backgroundColor: "white"
-        }}>
+        {/* Responsive Calendar Container */}
+        <div
+          style={{
+            width: "100%",
+            maxWidth: "1200px",
+            margin: "0 auto",
+            height: "75vh",
+            minHeight: "500px",
+            borderRadius: "12px",
+            overflow: "hidden",
+            backgroundColor: "white",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.15)"
+          }}
+        >
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
             style={{
@@ -48,24 +55,12 @@ export default function BookingPage() {
               height: "100%",
               border: "none"
             }}
-            title="Appointment Booking Calendar"
+            title="Book an Intro Meeting"
             allow="fullscreen"
           />
         </div>
-        
-      </div>
 
-      {/* Optional Footer */}
-      <div style={{
-        textAlign: "center",
-        padding: "10px",
-        fontSize: "14px",
-        color: "#666",
-        backgroundColor: "#f5f5f5"
-      }}>
-        <p>Select your preferred date and time for the appointment</p>
       </div>
-      
     </div>
   );
 }

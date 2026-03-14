@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import AttentionButton from "./button _animation/page";
 
 const issuesList = [
   <>Are you <strong> worried </strong> about facing <strong> tax demands & revenue leakages </strong>?</>,
@@ -15,8 +16,8 @@ const issuesList = [
 
 export function BookingCtaSection() {
   return (
-    <section className="container py-20 md:py-28">
-      <div className="mx-auto max-w-4xl">
+    <section className="py-12 md:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="mb-12 text-center">
@@ -57,6 +58,7 @@ export function BookingCtaSection() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
+          <AttentionButton>
 
           <Link
             href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
@@ -77,6 +79,7 @@ export function BookingCtaSection() {
               </span>
             </div>
           </Link>
+          </AttentionButton>
 
         </div>
 
